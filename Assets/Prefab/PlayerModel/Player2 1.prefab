@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 3926025861761573712}
   - component: {fileID: 3926025861761573713}
   - component: {fileID: 3926025861761573718}
-  - component: {fileID: 1267609331344280535}
   - component: {fileID: 3926025861761573741}
   m_Layer: 0
   m_Name: Player2 1
@@ -240,19 +239,8 @@ MonoBehaviour:
   bullet: {fileID: 7375998380837947890, guid: f13fd3a1c48d14146ac7f2b07389964e, type: 3}
   firePoint: {fileID: 3926025861577533841}
   fireForce: 20
---- !u!114 &1267609331344280535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3926025861761573719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c63c8ec6b69d444792822e75510d710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 3926025861761573718}
+  maxAmmo: 20
+  reloadTime: 1
 --- !u!50 &3926025861761573741
 Rigidbody2D:
   serializedVersion: 4
