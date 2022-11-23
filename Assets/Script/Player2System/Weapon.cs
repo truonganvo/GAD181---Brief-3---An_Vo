@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     public float fireForce;
 
     public int maxAmmo = 20;
-    private int currentAmmo;
+    public int currentAmmo;
     public float reloadTime = 1f;
 
     public TextMeshProUGUI ammoCount;
@@ -23,6 +23,10 @@ public class Weapon : MonoBehaviour
     private void Update()
     {
         ammoCount.text = currentAmmo.ToString("0");
+        if (currentAmmo >= maxAmmo)
+        {
+            currentAmmo = maxAmmo;
+        }
 
         if (Input.GetKeyDown(KeyCode.Keypad5) && currentAmmo > 0)
         {

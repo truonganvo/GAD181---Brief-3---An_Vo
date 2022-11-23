@@ -8,8 +8,10 @@ public class increaseHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        addHealth.Health += 5;
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            addHealth.Health += 5;
+            Destroy(gameObject);
+        }
     }
-
 }

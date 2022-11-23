@@ -16,7 +16,7 @@ public class Spawnhealth : MonoBehaviour
     private IEnumerator spawnHealth(float spawntime, GameObject health)
     {
         yield return new WaitForSeconds(spawntime);
-        GameObject newEnemy = Instantiate(health, new Vector3(Random.Range(-25, 25), 0, 0), Quaternion.identity);
+        GameObject newHealth = Instantiate(health, new Vector3(Random.Range(-25, 25), 0, 0), Quaternion.identity);
         StartCoroutine(spawnHealth(spawntime, health));
     }
 }

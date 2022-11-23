@@ -24,7 +24,7 @@ public class HealthImpact : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Health -= 20;
+            Health -= 10;
             if(Health <= 0)
             {
                 EmptyHealth();
