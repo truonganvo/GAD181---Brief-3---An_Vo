@@ -2340,8 +2340,8 @@ MonoBehaviour:
 
 
     Both of you
-    need to decided one person to enter the zone while the other stay on the other
-    side to guard and protect. '
+    need to decided one person to enter the zone while the other stay back and protect
+    from the other side'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea77ab6e3733cc44fb86d8ece40c18d9, type: 2}
   m_sharedMaterial: {fileID: 7819405932571515038, guid: ea77ab6e3733cc44fb86d8ece40c18d9,
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DangerZone
+  m_text: DangerZone!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea77ab6e3733cc44fb86d8ece40c18d9, type: 2}
   m_sharedMaterial: {fileID: 7819405932571515038, guid: ea77ab6e3733cc44fb86d8ece40c18d9,
