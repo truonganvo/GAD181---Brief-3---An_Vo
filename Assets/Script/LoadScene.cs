@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public GameObject GameOver;
+    [SerializeField] TimerScore stopscoring;
+
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");
@@ -27,6 +29,7 @@ public class LoadScene : MonoBehaviour
 
     public void EnableGameOverMenu()
     {
+        stopscoring.StopTimer();
         GameOver.SetActive(true);
     }
 }

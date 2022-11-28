@@ -16,7 +16,7 @@ public class SpawnAmmo : MonoBehaviour
     private IEnumerator spawnHealth(float spawntime, GameObject ammo)
     {
         yield return new WaitForSeconds(spawntime);
-        GameObject newAmmo = Instantiate(ammo, new Vector3(Random.Range(-25, 25), Random.Range(5, 16), 0), Quaternion.identity);
+        GameObject newAmmo = Instantiate(ammo, new Vector3(Random.Range(-26, 27), Random.Range(38, 56), 0), Quaternion.identity);
         StartCoroutine(spawnHealth(spawntime, ammo));
     }
 }
