@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Weapon : MonoBehaviour
     public int maxAmmo = 20;
     public int currentAmmo;
     public float reloadTime = 1f;
+    public Image ammoBar;
+
 
     public TextMeshProUGUI ammoCount;
 
@@ -32,6 +35,20 @@ public class Weapon : MonoBehaviour
         {
             Fire();
         }
+
+        if (currentAmmo >= 60)
+        {
+            ammoBar.color = Color.green;
+        }
+        if (currentAmmo <= 40)
+        {
+            ammoBar.color = Color.yellow;
+        }
+        if (currentAmmo <= 20)
+        {
+            ammoBar.color = Color.red;
+        }
+
     }
 
     public void Fire()

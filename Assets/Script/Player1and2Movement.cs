@@ -14,6 +14,8 @@ public class Player1and2Movement : MonoBehaviour
     public KeyCode up;
     public KeyCode down;
 
+    public ParticleSystem dust;
+
     private void OnEnable()
     {
         HealthImpact.onPlayerDeath += DisableOnAction;
@@ -33,21 +35,27 @@ public class Player1and2Movement : MonoBehaviour
         if (Input.GetKey(left))
         {
             transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
+            transform.localScale = new Vector2(-1, 1);
+            dust.Play();
         }
 
         if (Input.GetKey(down))
         {
             transform.Translate(Vector2.down * movementSpeed * Time.deltaTime);
+            dust.Play();
         }
 
         if (Input.GetKey(right))
         {
             transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+            transform.localScale = new Vector2(1, 1);
+            dust.Play();
         }
 
         if (Input.GetKey(up))
         {
             transform.Translate(Vector2.up * movementSpeed * Time.deltaTime);
+            dust.Play();
         }
     }
 

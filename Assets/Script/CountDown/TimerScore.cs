@@ -13,6 +13,8 @@ public class TimerScore : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI HighScore;
 
+    [SerializeField] GameObject enemyActivate;
+
     [SerializeField] Enemy increaseEnemy;
     private void Start()
     {
@@ -24,6 +26,11 @@ public class TimerScore : MonoBehaviour
         {
             StartTimer();
             timeText.text = timer.ToString("0");
+        }
+
+        if(timer >= 10f)
+        {
+            enemyActivate.SetActive(true);
         }
     }
 
@@ -37,4 +44,6 @@ public class TimerScore : MonoBehaviour
         timerActive = true;
         HighScore.text = timer.ToString("0");
     }
+
+
 }

@@ -7,16 +7,35 @@ using TMPro;
 
 public class HealthImpact : MonoBehaviour
 {
-    public int Health;
+    public int Health, maxHealth;
     public TextMeshProUGUI health;
-    public static event Action onPlayerDeath; 
+    public static event Action onPlayerDeath;
+    public Image healthBar;
 
+    private void Start()
+    {
+        Health = maxHealth;
+    }
     private void Update()
     {
         health.text = Health.ToString("0");
-        if(Health > 100)
+        if(Health >= 100)
         {
             Health = 100;
+            healthBar.color = Color.green;
+        }
+        if(Health <= 60)
+        {
+            healthBar.color = Color.yellow;
+        }
+        if(Health <= 30)
+        {
+            healthBar.color = Color.red;
+        }
+
+        if(Health <= 0)
+        {
+            EmptyHealth();
         }
     }
 
@@ -25,10 +44,6 @@ public class HealthImpact : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Health -= 10;
-            if(Health <= 0)
-            {
-                EmptyHealth();
-            }
         }
     }
 
