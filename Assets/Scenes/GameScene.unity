@@ -650,7 +650,7 @@ SpriteRenderer:
   m_Size: {x: 3.6, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &277888018
@@ -6959,9 +6959,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7379202391327226529, guid: dd64b0fae4b15734dae0d0372a40f3b6,
         type: 3}
+      propertyPath: Health
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379202391327226529, guid: dd64b0fae4b15734dae0d0372a40f3b6,
+        type: 3}
       propertyPath: health
       value: 
       objectReference: {fileID: 1025795488}
+    - target: {fileID: 7379202391327226529, guid: dd64b0fae4b15734dae0d0372a40f3b6,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1689700021}
+    - target: {fileID: 7379202391327226529, guid: dd64b0fae4b15734dae0d0372a40f3b6,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7866920998940441730, guid: dd64b0fae4b15734dae0d0372a40f3b6,
         type: 3}
       propertyPath: m_Controller
@@ -7430,7 +7445,7 @@ SpriteRenderer:
   m_Size: {x: 3.6, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &953714332
@@ -13305,7 +13320,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273889852}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 26, y: 63.3, z: -85.123955}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13642,7 +13657,7 @@ SpriteRenderer:
   m_Size: {x: 3.6, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1472412188
@@ -19385,7 +19400,7 @@ SpriteRenderer:
   m_Size: {x: 3.6, y: 3.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1905246223
@@ -19996,6 +20011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1668616469}
   HighScore: {fileID: 1232970451}
+  enemyActivate: {fileID: 1273889852}
   increaseEnemy: {fileID: 7404305126800456560, guid: 5a0ffb9ebd5a90b479fe73bd6ec8f9e7,
     type: 3}
 --- !u!1 &2023167463
@@ -80330,12 +80346,12 @@ PrefabInstance:
     - target: {fileID: 3926025861761573715, guid: c34378d03291e3644b4f74b1c6009a0a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3926025861761573715, guid: c34378d03291e3644b4f74b1c6009a0a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3926025861761573715, guid: c34378d03291e3644b4f74b1c6009a0a,
         type: 3}
@@ -80387,6 +80403,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3926025861761573718, guid: c34378d03291e3644b4f74b1c6009a0a,
+        type: 3}
+      propertyPath: ammoBar
+      value: 
+      objectReference: {fileID: 501744883}
     - target: {fileID: 3926025861761573718, guid: c34378d03291e3644b4f74b1c6009a0a,
         type: 3}
       propertyPath: maxAmmo
