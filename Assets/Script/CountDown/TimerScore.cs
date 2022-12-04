@@ -14,6 +14,9 @@ public class TimerScore : MonoBehaviour
     public TextMeshProUGUI HighScore;
 
     [SerializeField] GameObject enemyActivate;
+    [SerializeField] GameObject enemyActivate1;
+    [SerializeField] GameObject enemyActivate2;
+
 
     [SerializeField] Enemy increaseEnemy;
     private void Start()
@@ -31,6 +34,17 @@ public class TimerScore : MonoBehaviour
         if(timer >= 10f)
         {
             enemyActivate.SetActive(true);
+        }
+
+        if (timer >= 100f)
+        {
+            enemyActivate1.SetActive(true);
+
+        }
+
+        if (timer >= 200f)
+        {
+            enemyActivate2.SetActive(true);
         }
     }
 

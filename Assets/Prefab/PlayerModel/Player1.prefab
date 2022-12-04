@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 128254556254799653}
   - component: {fileID: 128254556254799652}
   - component: {fileID: 2635475103026826994}
+  - component: {fileID: 7198353777576651067}
+  - component: {fileID: 543125162541751056}
   - component: {fileID: 7379202391327226529}
   - component: {fileID: 7205332430643180922}
   - component: {fileID: 2883030119953570815}
@@ -107,6 +109,34 @@ MonoBehaviour:
   right: 100
   up: 119
   down: 115
+  dust: {fileID: 0}
+--- !u!114 &7198353777576651067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128254556254799651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e396df0f4816e0b48b7ac031d5d906d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 543125162541751056}
+--- !u!114 &543125162541751056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128254556254799651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caf2caafe5acd54b8acbaae0dab4eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 4bf61e2b09a69c341ac4d7456ffcbbd9, type: 2}
+  duration: 0.125
 --- !u!114 &7379202391327226529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+  maxHealth: 0
   health: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!50 &7205332430643180922
 Rigidbody2D:
   serializedVersion: 4

@@ -48,6 +48,10 @@ public class Weapon : MonoBehaviour
         {
             ammoBar.color = Color.red;
         }
+        if (currentAmmo == 0)
+        {
+            ammoBar.color = Color.gray;
+        }
 
     }
 

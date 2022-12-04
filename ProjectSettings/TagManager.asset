@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Player1
   - Ammo
+  - BiggerEnemy
+  - Trap
   layers:
   - Default
   - TransparentFX

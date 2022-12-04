@@ -15,5 +15,12 @@ public class Bullet : MonoBehaviour
             enemy.health -= bulletDamage;
             Destroy(gameObject);
         }
+
+        if (other.gameObject.CompareTag("BiggerEnemy"))
+        {
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            enemy.health -= bulletDamage;
+            Destroy(gameObject);
+        }
     }
 }

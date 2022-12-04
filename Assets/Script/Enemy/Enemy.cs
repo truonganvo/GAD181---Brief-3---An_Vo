@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     private Transform player;
     [SerializeField] float speed;
 
-    public float timerStart = 0;
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player1").transform;

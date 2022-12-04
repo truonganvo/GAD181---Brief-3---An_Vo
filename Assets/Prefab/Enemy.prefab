@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7404305126800456590}
   - component: {fileID: 7404305126800456591}
-  - component: {fileID: 7404305126800456561}
   - component: {fileID: 7404305126800456560}
   - component: {fileID: 1876339162714537579}
   - component: {fileID: 2128329571173951518}
   m_Layer: 0
-  m_Name: Enemy (1)
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7404305126800456561
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7404305126800456589}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.50000006
 --- !u!114 &7404305126800456560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   speed: 3
-  timerStart: 0
 --- !u!50 &1876339162714537579
 Rigidbody2D:
   serializedVersion: 4
