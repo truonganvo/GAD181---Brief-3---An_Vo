@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Rigidbody2D rb;
-    [SerializeField] float bulletDamage = 5;
+    [SerializeField] int bulletDamage = 5;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

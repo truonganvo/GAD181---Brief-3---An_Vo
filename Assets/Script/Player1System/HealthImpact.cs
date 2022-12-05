@@ -44,8 +44,6 @@ public class HealthImpact : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Health -= 10;
-            Vector2 difference = transform.position - collision.transform.position;
-            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
         }
 
         if (collision.gameObject.CompareTag("BiggerEnemy"))
