@@ -7,6 +7,7 @@ public class LoadScene : MonoBehaviour
 {
     public GameObject GameOver;
     [SerializeField] TimerScore stopscoring;
+    [SerializeField] AudioSource musicTheme;
 
     public void LoadGame()
     {
