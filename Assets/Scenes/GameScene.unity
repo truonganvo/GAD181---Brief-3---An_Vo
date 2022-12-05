@@ -6359,7 +6359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 28.672302}
+  m_AnchoredPosition: {x: 0, y: 28.672363}
   m_SizeDelta: {x: 1208.2538, y: 840.5831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366390241
@@ -13628,7 +13628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -48.632904}
+  m_AnchoredPosition: {x: 0, y: -48.632812}
   m_SizeDelta: {x: -1208.2538, y: -798.4329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1450799792
@@ -13884,7 +13884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOver: {fileID: 1450799790}
   stopscoring: {fileID: 2015639610}
-  musicTheme: {fileID: 0}
+  musicTheme: {fileID: 2015639611}
 --- !u!1 &1540233842
 GameObject:
   m_ObjectHideFlags: 0

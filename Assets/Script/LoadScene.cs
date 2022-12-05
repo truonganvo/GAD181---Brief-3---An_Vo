@@ -30,6 +30,7 @@ public class LoadScene : MonoBehaviour
 
     public void EnableGameOverMenu()
     {
+        musicTheme.Pause();
         stopscoring.StopTimer();
         GameOver.SetActive(true);
     }
