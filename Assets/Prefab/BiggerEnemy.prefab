@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+  death: {fileID: 7404305126800456589}
   speed: 1
 --- !u!50 &1876339162714537579
 Rigidbody2D:

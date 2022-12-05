@@ -10,6 +10,7 @@ TagManager:
   - Ammo
   - BiggerEnemy
   - Trap
+  - ScreenShake
   layers:
   - Default
   - TransparentFX
