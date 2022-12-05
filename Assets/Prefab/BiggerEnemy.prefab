@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
-  death: {fileID: 7404305126800456589}
   speed: 1
+  enemyParticle: {fileID: 6714946208032061968, guid: 63769e3f3ce952f478286d2e0f4dd29f,
+    type: 3}
+  deathSFX: {fileID: 0}
 --- !u!50 &1876339162714537579
 Rigidbody2D:
   serializedVersion: 4

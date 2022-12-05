@@ -6,7 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public int health = 20;
     private Transform player;
+
     [SerializeField] float speed;
+    [SerializeField] ParticleSystem enemyParticle;
 
     private void Awake()
     {
@@ -15,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-
+        Instantiate(enemyParticle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
