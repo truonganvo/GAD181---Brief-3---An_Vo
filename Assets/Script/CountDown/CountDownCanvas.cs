@@ -15,10 +15,15 @@ public class CountDownCanvas : MonoBehaviour
         {
             timerValue -= Time.deltaTime;
         }
+        else if(timerValue == 5)
+        {
+            GetComponent<Alert>().enabled = false;
+        }
         else
         {
             timerValue = 0;
             player1and2canvas.SetActive(false);
         }
+
     }
 }
