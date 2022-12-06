@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9151512376481104064}
   - component: {fileID: 5828200579196892959}
+  - component: {fileID: 1176912204578507331}
   m_Layer: 0
   m_Name: Pool of Acid 1
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1176912204578507331
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267930052280122013}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.041100025, y: 0.016439795}
+  serializedVersion: 2
+  m_Radius: 1.6054604

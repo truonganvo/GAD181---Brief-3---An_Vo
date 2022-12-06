@@ -12,12 +12,4 @@ public class DangerZone : MonoBehaviour
             lostHealth.Health -= 5;
         }
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ammo"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
 }

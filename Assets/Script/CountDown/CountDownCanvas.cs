@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CountDownCanvas : MonoBehaviour
 {
-    [SerializeField] GameObject player1;
-    [SerializeField] GameObject player2;
+    [SerializeField] GameObject player1and2canvas;
+
 
     public float timerValue = 20f;
 
@@ -18,8 +18,7 @@ public class CountDownCanvas : MonoBehaviour
         else
         {
             timerValue = 0;
-            player1.SetActive(false);
-            player2.SetActive(false);
+            player1and2canvas.SetActive(false);
         }
     }
 }
