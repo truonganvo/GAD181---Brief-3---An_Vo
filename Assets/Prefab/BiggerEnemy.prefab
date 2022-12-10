@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7404305126800456589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1042, y: 13.8545, z: 0}
-  m_LocalScale: {x: 4.6132474, y: 4.1641088, z: 1}
+  m_LocalPosition: {x: 13.7162, y: 13.1769, z: 0}
+  m_LocalScale: {x: 4.194826, y: 3.70106, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -430635489
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 976d44b09dd8dad40a4e56cd28748890, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a10cb1d08c8e34fabb85176e22daef, type: 3}
   m_Color: {r: 0.088282354, g: 1, b: 0.04150939, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,6 @@ MonoBehaviour:
   speed: 1
   enemyParticle: {fileID: 6714946208032061968, guid: 63769e3f3ce952f478286d2e0f4dd29f,
     type: 3}
-  deathSFX: {fileID: 0}
 --- !u!50 &1876339162714537579
 Rigidbody2D:
   serializedVersion: 4
@@ -138,16 +137,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004213929, y: 0.008580655}
+  m_Offset: {x: 0.034552306, y: -0.020893216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4628571, y: 1.4628571}
+    oldSize: {x: 2.9257143, y: 2.9257143}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.049943, y: 1.3942094}
+  m_Size: {x: 1.2493086, y: 2.258764}
   m_EdgeRadius: 0

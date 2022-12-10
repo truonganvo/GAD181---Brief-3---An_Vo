@@ -6,7 +6,6 @@ public class CountDownCanvas : MonoBehaviour
 {
     [SerializeField] GameObject player1and2canvas;
 
-
     public float timerValue = 20f;
 
     void Update()

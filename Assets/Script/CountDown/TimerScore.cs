@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TimerScore : MonoBehaviour
 {
-    private float timer = 0f;
+    public float timer = 0f;
     private float timeIncrease = 1f;
 
     bool timerActive = false;
@@ -16,6 +17,7 @@ public class TimerScore : MonoBehaviour
     [SerializeField] GameObject enemyActivate;
     [SerializeField] GameObject enemyActivate1;
     [SerializeField] GameObject enemyActivate2;
+    [SerializeField] GameObject objective;
 
 
     [SerializeField] Enemy increaseEnemy;
@@ -36,16 +38,23 @@ public class TimerScore : MonoBehaviour
             enemyActivate.SetActive(true);
         }
 
-        if (timer >= 100f)
+        if(timer >= 30f)
+        {
+            objective.SetActive(true);
+        }
+
+        if (timer >= 55f)
         {
             enemyActivate1.SetActive(true);
 
         }
 
-        if (timer >= 200f)
+        if (timer >= 135f)
         {
             enemyActivate2.SetActive(true);
         }
+
+        Win();
     }
 
     public void StartTimer()
@@ -59,5 +68,11 @@ public class TimerScore : MonoBehaviour
         HighScore.text = timer.ToString("0");
     }
 
-
+    private void Win()
+    {
+        if (timer >= 190f)
+        {
+            SceneManager.LoadScene("Ending");
+        }
+    }
 }

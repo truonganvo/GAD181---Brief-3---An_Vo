@@ -41,6 +41,7 @@ public class Alert : MonoBehaviour
         if (objectsToEnable.Count == 0)
         {
             Invoke("DisableTheList", 10f);
+            return;
         }
         // Disable the object
         GameObject objToDisable = objectsToEnable[0];
