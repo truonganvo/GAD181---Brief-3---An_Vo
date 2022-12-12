@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
 
 
     public TextMeshProUGUI ammoCount;
+    public GameObject warning1;
 
     private void Start()
     {
@@ -47,7 +48,13 @@ public class Weapon : MonoBehaviour
         if (currentAmmo <= 20)
         {
             ammoBar.color = Color.red;
+            warning1.SetActive(true);
         }
+        else
+        {
+            warning1.SetActive(false);
+        }
+
         if (currentAmmo == 0)
         {
             ammoBar.color = Color.gray;

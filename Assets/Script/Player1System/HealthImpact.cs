@@ -7,10 +7,15 @@ using TMPro;
 
 public class HealthImpact : MonoBehaviour
 {
-    public int Health, maxHealth;
+    public int Health, maxHealth, healthThreshold = 30;
+
     public TextMeshProUGUI health;
     public static event Action onPlayerDeath;
     public Image healthBar;
+
+    public AudioSource lowHealth;
+    public AudioClip SFX;
+    public GameObject warning;
 
     private void Start()
     {
@@ -28,14 +33,35 @@ public class HealthImpact : MonoBehaviour
         {
             healthBar.color = Color.yellow;
         }
-        if(Health <= 30)
+
+        if (Health <= 30)
         {
             healthBar.color = Color.red;
+            warning.SetActive(true);
+        }
+        else
+        {
+            warning.SetActive(false);
+
         }
 
-        if(Health <= 0)
+        //Check if the current health is below the threshold.
+        if (Health <= healthThreshold && !lowHealth.isPlaying)
+        {
+            lowHealth.clip = SFX;
+            lowHealth.Play();
+        }
+        else if (Health > healthThreshold && lowHealth.isPlaying)
+        {
+            lowHealth.Stop();
+        }
+
+
+        if (Health <= 0)
         {
             EmptyHealth();
+            lowHealth.Stop();
+            warning.SetActive(false);
         }
     }
 
